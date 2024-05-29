@@ -6,16 +6,17 @@ public class CameraController : MonoBehaviour
 {
 
 
-    // Start is called before the first frame update
+    public Transform Hero;
+    Vector3 diff;
+
     void Start()
     {
-
+        diff = transform.position - Hero.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-
-
+        transform.position = Vector3.Lerp(transform.position, Hero.position + diff, 0.5f);
     }
+
 }
