@@ -15,7 +15,7 @@ public class TitleController : MonoBehaviour
     public void OnStartButtonClicked()
     {
         Initiate.Fade("Main", Color.black, 1.0f);
-        //SceneManager.LoadScene("Main");
+        // SceneManager.LoadScene("Main");
     }
 
 }
